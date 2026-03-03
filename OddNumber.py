@@ -1,8 +1,6 @@
-print("Inverted Right Half Pyramid:\n")
+even = list(range(2, 51, 2))
 
-rows = 6
-
-for i in range(rows, 0, -1):
-    for j in range(i):
-        print("*", end=" ")
-    print()
+print("Even numbers:", even)
+print("Min three total:", sum(even[:3]))
+print("Max three total:", sum(even[-3:]))
+print("Average:", sum(even) / len(even))
